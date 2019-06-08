@@ -1,0 +1,84 @@
+body {
+  background: #E9EDF4;
+}
+
+.dash {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dash-app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+
+  margin-top: 84px;
+
+  @include media-breakpoint-up(lg) {
+    margin-left: 238px;
+
+    .dash-compact & {
+      margin-left: 0;
+    }
+  }
+}
+
+.dash-content {
+  flex-grow: 2;
+  padding: 25px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px 0px;
+  }
+
+
+  > .container-fluid {
+    //padding: 0;
+  }
+}
+
+.dash-row {
+  margin-bottom: 30px;
+}
+
+.form-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+
+  .spur-logo {
+    margin-bottom: 60px;
+    opacity: .9;
+
+    i {
+      color: $body-color;
+    }
+  }
+}
+
+.account-dialog {
+  max-width: 360px;
+
+  @include media-breakpoint-up(xl) {
+    min-width: 360px;
+  }
+}
+
+.account-dialog-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.account-dialog-link {
+  margin-left: 15px;
+  font-size: 14px;
+  color: rgba($body-color, .8);
+
+  &:hover {
+    color: $body-color;
+    text-decoration: none;
+  }
+}

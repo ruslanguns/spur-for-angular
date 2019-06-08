@@ -1,0 +1,168 @@
+%toolbar-icon {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $body-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $body-color;
+  }
+
+  i {
+    font-size: 20px;
+  }
+}
+
+%icon-notification-counter {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-style: normal;
+  font-size: 11px;
+  background: #FF5A00;
+  color: #fff;
+}
+
+
+.dash-toolbar {
+  min-height: 84px;
+  background-color: $toolbar-bg;
+  display: flex;
+  align-items: center;
+  padding: 8px 27px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+
+  @include media-breakpoint-up(lg) {
+    left: 238px;
+
+    .dash-compact & {
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    //padding: 8px 84px 8px 16px;
+  }
+}
+
+.menu-toggle {
+  @extend %toolbar-icon;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: $toolbar-bg;
+    min-height: 84px;
+    z-index: 1071;
+    padding: 8px 27px;
+
+    &.show {
+      display: flex;
+    }
+  }
+}
+
+.searchbox-toggle {
+  @extend %toolbar-icon;
+  display: none;
+  color: $body-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $body-color;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: flex;
+  }
+
+}
+
+.searchbox-input {
+  border: none;
+  background-color: $toolbar-bg;
+  //background-color: fuchsia;
+  height: 50px;
+  //width: 400px;
+  padding: 8px 8px 11px 4px;
+  flex-grow: 2;
+  width: 100px;
+
+  &::placeholder {
+    color: $searchbox-input-placeholder;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.searchbox-submit {
+  @extend %toolbar-icon;
+  border: none;
+  background: none;
+  //color: $searchbox-input-placeholder;
+  padding: 0;
+
+  @include media-breakpoint-down(sm) {
+    order: 9;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.tools {
+  margin-left: auto;
+  display: flex;
+
+  a {
+    color: $body-color;
+  }
+}
+
+.tools-item {
+  @extend %toolbar-icon;
+
+  //margin-left: 41px;
+  //
+  //&:first-child {
+  //  margin-left: 0;
+  //}
+
+  .tools-item-count {
+    @extend %icon-notification-counter;
+  }
+}
