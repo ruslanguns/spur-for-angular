@@ -1,0 +1,131 @@
+<h1 class="dash-title">Ng2-Chart</h1>
+<p class="mb-5"> These charts are made using the Chart.js library. You can find more examples and ways to configure the
+  charts in the <a href="https://valor-software.com/ng2-charts/" target="_blank">ng2-charts Documentation</a>. </p>
+<div class="row">
+  <div class="col-xl-6">
+    <div class="card spur-card">
+      <div class="card-header">
+        <div class="spur-card-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="spur-card-title"> Two bars </div>
+        <div class="spur-card-menu">
+          <div class="dropdown show">
+            <a class="spur-card-menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body spur-card-body-chart">
+        <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card spur-card">
+      <div class="card-header">
+        <div class="spur-card-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="spur-card-title"> Line </div>
+        <div class="spur-card-menu">
+          <div class="dropdown show">
+            <a class="spur-card-menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body spur-card-body-chart">
+        <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-6">
+    <div class="card spur-card">
+      <div class="card-header">
+        <div class="spur-card-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="spur-card-title"> Doughnut </div>
+        <div class="spur-card-menu">
+          <div class="dropdown show">
+            <a class="spur-card-menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body spur-card-body-chart">
+        <canvas baseChart
+          [data]="doughnutChartData"
+          [labels]="doughnutChartLabels"
+          [chartType]="doughnutChartType">
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card spur-card">
+      <div class="card-header">
+        <div class="spur-card-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="spur-card-title"> Polar Area </div>
+        <div class="spur-card-menu">
+          <div class="dropdown show">
+            <a class="spur-card-menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body spur-card-body-chart">
+        <canvas baseChart
+          [datasets]="radarChartData"
+          [options]="radarChartOptions"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType">
+      </canvas>
+      </div>
+    </div>
+  </div>
+</div>
