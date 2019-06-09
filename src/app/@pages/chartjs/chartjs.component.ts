@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ChartType, ChartDataSets, ChartOptions } from 'chart.js';
+import { ChartType, ChartDataSets, ChartOptions, RadialChartOptions } from 'chart.js';
 import { MultiDataSet, Label, Color, BaseChartDirective } from 'ng2-charts';
 
 @Component({
