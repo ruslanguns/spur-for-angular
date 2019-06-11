@@ -74,21 +74,9 @@
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
 
 const routes: Routes &#x3D; [
-  { path: &#x27;&#x27;, redirectTo: &#x27;/dashboard&#x27;, pathMatch: &#x27;full&#x27; },
-  { path: &#x27;blank&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/blank/blank.module&#x27;).then(m &#x3D;&gt; m.BlankModule)&quot; },
-  { path: &#x27;cards&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/cards/cards.module&#x27;).then(m &#x3D;&gt; m.CardsModule)&quot; },
-  { path: &#x27;chartjs&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/chartjs/chartjs.module&#x27;).then(m &#x3D;&gt; m.ChartjsModule)&quot; },
-  { path: &#x27;content&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/content/content.module&#x27;).then(m &#x3D;&gt; m.ContentModule)&quot; },
-  { path: &#x27;dashboard&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/dashboard/dashboard.module&#x27;).then(m &#x3D;&gt; m.DashboardModule)&quot; },
-  { path: &#x27;forms&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/forms/forms.module&#x27;).then(m &#x3D;&gt; m.FormsModule)&quot; },
-  { path: &#x27;icons&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/icons/icons.module&#x27;).then(m &#x3D;&gt; m.IconsModule)&quot; },
-  { path: &#x27;stats&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/stats/stats.module&#x27;).then(m &#x3D;&gt; m.StatsModule)&quot; },
-  { path: &#x27;tables&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/tables/tables.module&#x27;).then(m &#x3D;&gt; m.TablesModule)&quot; },
-  { path: &#x27;typography&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/typography/typography.module&#x27;).then(m &#x3D;&gt; m.TypographyModule)&quot; },
-  { path: &#x27;userinterface&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/userinterface/userinterface.module&#x27;).then(m &#x3D;&gt; m.UserinterfaceModule)&quot; },
-  { path: &#x27;login&#x27;, redirectTo: &#x27;/dashboard&#x27;, pathMatch: &#x27;full&#x27; },
-  { path: &#x27;register&#x27;, redirectTo: &#x27;/dashboard&#x27;, pathMatch: &#x27;full&#x27; },
-  { path: &#x27;**&#x27;, redirectTo: &#x27;/dashboard&#x27;, pathMatch: &#x27;full&#x27; }
+  { path: &#x27;&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@auth/auth.module&#x27;).then(m &#x3D;&gt; m.AuthModule)&quot; },
+  { path: &#x27;admin&#x27;, loadChildren: () &#x3D;&gt; &quot;import(&#x27;./@pages/pages.module&#x27;).then(m &#x3D;&gt; m.PagesModule)&quot; },
+  { path: &#x27;**&#x27;, redirectTo: &#x27;login&#x27;, pathMatch: &#x27;full&#x27; }
 ];
 
 @NgModule({

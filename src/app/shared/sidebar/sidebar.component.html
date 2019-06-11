@@ -1,30 +1,31 @@
 <div class="dash-nav dash-nav-dark">
   <header>
-    <span class="menu-toggle">
+    <a href="javascript:void(0)" class="menu-toggle">
       <i class="fas fa-bars"></i>
-    </span>
-    <a [routerLink]="['/dashboard']" class="spur-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
+    </a>
+    <a [routerLink]="['dashboard']" class="spur-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
   </header>
-  <nav class="dash-nav-list" routerLinkActive="show">
-    <a [routerLink]="['/dashboard']" class="dash-nav-item">
-      <i class="fas fa-home"></i> Dashboard</a>
-    <div class="dash-nav-dropdown" routerLinkActive="show">
-      <span class="dash-nav-item dash-nav-dropdown-toggle">
-        <i class="fas fa-chart-bar"></i> Charts </span>
+  <nav class="dash-nav-list">
+    <a [routerLink]="['dashboard']" class="dash-nav-item"><i class="fas fa-home"></i> Dashboard </a>
+
+    <div class="dash-nav-dropdown">
+      <a href="javascript:void(0)" class="dash-nav-item dash-nav-dropdown-toggle">
+        <i class="fas fa-chart-bar"></i> Charts
+      </a>
       <div class="dash-nav-dropdown-menu">
         <a [routerLink]="['chartjs']" class="dash-nav-dropdown-item">Chart.js</a>
       </div>
     </div>
-    <div class="dash-nav-dropdown" routerLinkActive="show">
-      <span href="#!" chartjs class="dash-nav-item dash-nav-dropdown-toggle">
-        <i class="fas fa-cube"></i> Components </span>
+    <div class="dash-nav-dropdown">
+      <a href="javascript:void(0)" class="dash-nav-item dash-nav-dropdown-toggle">
+        <i class="fas fa-cube"></i> Components </a>
       <div class="dash-nav-dropdown-menu">
         <a [routerLink]="['cards']" class="dash-nav-dropdown-item">Cards</a>
         <a [routerLink]="['forms']" class="dash-nav-dropdown-item">Forms</a>
-        <div class="dash-nav-dropdown" routerLinkActive="show">
-          <span href="#!" class="dash-nav-dropdown-item dash-nav-dropdown-toggle">Icons</span>
+        <div class="dash-nav-dropdown">
+          <a href="javascript:void(0)" class="dash-nav-dropdown-item dash-nav-dropdown-toggle">Icons</a>
           <div class="dash-nav-dropdown-menu">
-            <span [routerLink]="['icons']" class="dash-nav-dropdown-item">Solid Icons</span>
+            <a [routerLink]="['icons']" class="dash-nav-dropdown-item">Solid Icons</a>
             <a [routerLink]="['icons']" [fragment]="'regular-icons'" class="dash-nav-dropdown-item">Regular Icons</a>
             <a [routerLink]="['icons']" [fragment]="'brand-icons'" class="dash-nav-dropdown-item">Brand Icons</a>
           </div>
@@ -35,24 +36,26 @@
         <a [routerLink]="['userinterface']" class="dash-nav-dropdown-item">User Interface</a>
       </div>
     </div>
-    <div class="dash-nav-dropdown" routerLinkActive="show">
-      <span href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
-        <i class="fas fa-file"></i> Layouts </span>
+    <div class="dash-nav-dropdown">
+      <a href="javascript:void(0)" class="dash-nav-item dash-nav-dropdown-toggle">
+        <i class="fas fa-file"></i> Layouts </a>
       <div class="dash-nav-dropdown-menu">
         <a [routerLink]="['blank']" class="dash-nav-dropdown-item">Blank</a>
         <a [routerLink]="['content']" class="dash-nav-dropdown-item">Content</a>
-        <a routerLink="login" class="dash-nav-dropdown-item">Log in</a>
-        <a routerLink="register" class="dash-nav-dropdown-item">Sign up</a>
+        <a [routerLink]="['/login']" class="dash-nav-dropdown-item">Log in</a>
+        <a [routerLink]="['/signup']" class="dash-nav-dropdown-item">Sign up</a>
+        <a [routerLink]="['/forgot']" class="dash-nav-dropdown-item">Forgot</a>
+        <a [routerLink]="['/reset','token_goes_here']" class="dash-nav-dropdown-item">Reset</a>
       </div>
     </div>
-    <div class="dash-nav-dropdown" routerLinkActive="show">
-      <span href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
-        <i class="fas fa-info"></i> About </span>
-        <div class="dash-nav-dropdown-menu">
-          <a href="https://github.com/ruslanguns/Spur-for-Angular" target="_blank"
-            class="dash-nav-dropdown-item">GitHub - Angular</a>
-          <a href="https://github.com/HackerThemes/spur-template" target="_blank"
-            class="dash-nav-dropdown-item">GitHub - Original</a>
+    <div class="dash-nav-dropdown">
+      <a href="javascript:void(0)" class="dash-nav-item dash-nav-dropdown-toggle">
+        <i class="fas fa-info"></i> About </a>
+      <div class="dash-nav-dropdown-menu">
+        <a href="https://github.com/ruslanguns/Spur-for-Angular" target="_blank" class="dash-nav-dropdown-item">GitHub -
+          Angular</a>
+        <a href="https://github.com/HackerThemes/spur-template" target="_blank"
+          class="dash-nav-dropdown-item">GitHub</a>
         <a href="http://hackerthemes.com" target="_blank" class="dash-nav-dropdown-item">HackerThemes</a>
         <a href="https://twitter.com/ruslangonzalez" target="_blank" class="dash-nav-dropdown-item">Ruslan's Twitter</a>
       </div>

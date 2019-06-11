@@ -8,13 +8,11 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent implements OnInit {
 
-  res: any;
-
   constructor(
     public router: Router
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
   }
-
 }

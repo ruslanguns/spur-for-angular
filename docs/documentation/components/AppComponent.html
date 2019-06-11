@@ -111,33 +111,6 @@
     </table>
 </section>
 
-    <section>
-    <h3 id="index">Index</h3>
-    <table class="table table-sm table-bordered index-table">
-        <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#title">title</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-
-
-
-
-
-
-        </tbody>
-    </table>
-</section>
 
 
 
@@ -145,44 +118,6 @@
 
 
 
-    <section>
-    
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="title"></a>
-                        <span class="name">
-                            <b>
-                            title</b>
-                            <a href="#title"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>&#x27;spur-template-for-angular&#x27;</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/app.component.ts:10</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-</section>
 
 </div>
 
@@ -197,13 +132,15 @@
   styleUrls: [&#x27;./app.component.scss&#x27;]
 })
 export class AppComponent {
-  title &#x3D; &#x27;spur-template-for-angular&#x27;;
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;dash&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">
+&lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;!--
+&lt;div class&#x3D;&quot;dash&quot;&gt;
   &lt;app-sidebar&gt;&lt;/app-sidebar&gt;
   &lt;div class&#x3D;&quot;dash-app&quot;&gt;
     &lt;app-header&gt;&lt;/app-header&gt;
@@ -213,7 +150,7 @@ export class AppComponent {
       &lt;/div&gt;
     &lt;/main&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt; --&gt;
 </code></pre>
     </div>
 
@@ -250,8 +187,8 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="dash">  <app-sidebar></app-sidebar>  <div class="dash-app">    <app-header></app-header>    <main class="dash-content">      <div class="container-fluid">        <router-outlet></router-outlet>      </div>    </main>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BlankComponent', 'selector': 'app-blank'},{'name': 'CardsComponent', 'selector': 'app-cards'},{'name': 'ChartjsComponent', 'selector': 'app-chartjs'},{'name': 'ContentComponent', 'selector': 'app-content'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'FormsComponent', 'selector': 'app-forms'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconsComponent', 'selector': 'app-icons'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'StatsComponent', 'selector': 'app-stats'},{'name': 'TablesComponent', 'selector': 'app-tables'},{'name': 'TypographyComponent', 'selector': 'app-typography'},{'name': 'UserinterfaceComponent', 'selector': 'app-userinterface'}];
+        var COMPONENT_TEMPLATE = '<div><router-outlet></router-outlet><!--<div class="dash">  <app-sidebar></app-sidebar>  <div class="dash-app">    <app-header></app-header>    <main class="dash-content">      <div class="container-fluid">        <router-outlet></router-outlet>      </div>    </main>  </div></div> --></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BlankComponent', 'selector': 'app-blank'},{'name': 'CardsComponent', 'selector': 'app-cards'},{'name': 'ChartjsComponent', 'selector': 'app-chartjs'},{'name': 'ContentComponent', 'selector': 'app-content'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ForgotComponent', 'selector': 'app-forgot'},{'name': 'FormsComponent', 'selector': 'app-forms'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconsComponent', 'selector': 'app-icons'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PagesComponent', 'selector': 'app-pages'},{'name': 'ResetComponent', 'selector': 'app-reset'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'StatsComponent', 'selector': 'app-stats'},{'name': 'TablesComponent', 'selector': 'app-tables'},{'name': 'TypographyComponent', 'selector': 'app-typography'},{'name': 'UserinterfaceComponent', 'selector': 'app-userinterface'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

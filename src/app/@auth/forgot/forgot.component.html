@@ -1,0 +1,17 @@
+<div class="form-screen">
+    <a [routerLink]="['login']" class="spur-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
+    <div class="card account-dialog">
+        <div class="card-header bg-primary text-white">Password recovery </div>
+        <div class="card-body">
+            <form #f="ngForm" (ngSubmit)="formSubmitted(f)">
+                <div class="form-group">
+                    <input (ngModel)="user.email" name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                </div>
+                <div class="account-dialog-actions">
+                    <button [disabled]="!f.valid" type="submit" class="btn btn-primary">Confirm your email</button>
+                    <a [routerLink]="['/login']" class="account-dialog-link">Sign In?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
