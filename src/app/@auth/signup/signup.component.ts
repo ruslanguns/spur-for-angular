@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
+import { User } from '../auth.interface';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
 
+  formSubmitted(form: NgForm) {
+    console.log(form.value);
+
+    if (form.invalid) {
+      return;
+    }
+    return this.router.navigateByUrl('/admin');
+  }
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../auth.interface';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgotComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  formSubmitted(form: NgForm) {
+    if (form.invalid) {
+      return;
+    }
+    return this.router.navigateByUrl('/reset/token_goes_here');
   }
 
 }
