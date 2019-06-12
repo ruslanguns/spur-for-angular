@@ -40,6 +40,12 @@ Simply run `npm run build:prod` checkout the package.json for more info.
 
 ## Change log
 
+### 6-12-2019
+* Minor changes:
+- Quick login.
+- Demo and Documentation updated.
+- Readme updated.
+
 ### 6-11-2019
 * New features:
 - Authentication Skeleton [login, signup, forgot, reset]

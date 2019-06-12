@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormControl, FormGroup } from '@angular/forms';
 import { User } from '../auth.interface';
 
 @Component({
@@ -10,20 +10,30 @@ import { User } from '../auth.interface';
 })
 export class LoginComponent implements OnInit {
 
+  form: FormGroup;
   user: User;
-  password2: string;
 
   constructor(
     private router: Router
-  ) { }
+  ) {
+    this.form = new FormGroup({
+      email: new FormControl(),
+      password: new FormControl()
+    });
+
+    this.form.setValue({
+      email: 'test@test.com',
+      password: '123456'
+    });
+  }
 
   ngOnInit() {
   }
 
-  formSubmitted(form: NgForm) {
-    console.log(form.value);
+  formSubmitted() {
+    console.log(this.form.value);
 
-    if (form.invalid) {
+    if (this.form.invalid) {
       return;
     }
     return this.router.navigateByUrl('/admin');
