@@ -1,29 +1,29 @@
 # Spur Template v1.0.0 Converted For Angular
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/ruslanguns/Spur-for-Angular/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/ruslanguns/spur-for-angular/graphs/commit-activity)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/ruslanguns)
-[![GitHub contributors](https://img.shields.io/github/contributors/ruslanguns/Spur-for-Angular.svg)](https://GitHub.com/ruslanguns/Spur-for-Angular/graphs/contributors/)
-[![GitHub issues](https://img.shields.io/github/issues/ruslanguns/Spur-for-Angular.svg)](https://GitHub.com/ruslanguns/Spur-for-Angular/issues/)
-[![GitHub version](https://badge.fury.io/gh/ruslanguns%2FSpur-for-Angular.svg)](https://github.com/ruslanguns/Spur-for-Angular)
+[![GitHub contributors](https://img.shields.io/github/contributors/ruslanguns/spur-for-angular.svg)](https://GitHub.com/ruslanguns/spur-for-angular/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/ruslanguns/spur-for-angular.svg)](https://GitHub.com/ruslanguns/spur-for-angular/issues/)
+[![GitHub version](https://badge.fury.io/gh/ruslanguns%2Fspur-for-angular.svg)](https://github.com/ruslanguns/spur-for-angular)
 
 Author: Ruslan Gonzalez
 
-[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ruslanguns/Spur-for-Angular/)
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ruslanguns/spur-for-angular/)
 
 Theme Created by @[HackerThemes](https://github.com/HackerThemes/) - Code source — https://github.com/HackerThemes/spur-template
-![alt text](https://raw.githubusercontent.com/ruslanguns/Spur-for-Angular/master/spurAngular.png)
+![alt text](https://raw.githubusercontent.com/ruslanguns/spur-for-angular/master/spurAngular.png)
 
 ## Introduction
 This nice admin theme designed by @[hackerthemes](https://hackerthemes.com/bootstrap-tools/) and I thought that I'd be a nice idea to get it as a skeleton for Angular 8, so I converted it already with the best practices really easy to handle even for beginers I will be updating it frequenly so keep and eye on this repo, and if you'd like to contribute feel free to clone/fork and send your Pull Requests.
 
 ## Documentation
-* [Open documentation](https://ruslanguns.github.io/Spur-for-Angular/documentation/index.html)
+* [Open documentation](https://ruslanguns.github.io/spur-for-angular/documentation/index.html)
 
 Made by Compodoc
 
 ## Demo
-* [Open Demo](https://ruslanguns.github.io/Spur-for-Angular/)
+* [Open Demo](https://ruslanguns.github.io/spur-for-angular/)
 User any email and password. Few bootstrap validation has been installed.
 
 ## Development server
